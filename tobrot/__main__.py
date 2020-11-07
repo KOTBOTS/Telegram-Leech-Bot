@@ -73,19 +73,19 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=filters.command([f"{LEECH_COMMAND}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["leech@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_gdrive_message_handler = MessageHandler(
         incoming_gdrive_message_f,
-        filters=filters.command([f"{GLEECH_COMMAND}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["gleech@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_gdrive_message_handler)
     #
     incoming_telegram_download_handler = MessageHandler(
         down_load_media_f,
-        filters=filters.command([f"{TELEGRAM_LEECH_COMMAND_G}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["tleech@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_telegram_download_handler)
     #
@@ -115,13 +115,13 @@ if __name__ == "__main__" :
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=filters.command([f"{YTDL_COMMAND}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["ytdl@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     incoming_youtube_playlist_dl_handler = MessageHandler(
         g_yt_playlist,
-        filters=filters.command([f"{PYTDL_COMMAND_G}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["pytdl@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_playlist_dl_handler)
     #
@@ -194,13 +194,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=filters.command([f"{SAVE_THUMBNAIL}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["savethumb@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=filters.command([f"{CLEAR_THUMBNAIL}"]) & filters.chat(chats=AUTH_CHANNEL)
+        filters=filters.command(["clearthumb@URL_Leeching_Max_Bot"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
